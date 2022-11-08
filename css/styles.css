@@ -14,6 +14,7 @@
   --main-btn-color: #ffffff;
   --second-btn-color: #303030;
   --accent-color: #ff6c00;
+  --typical-margin: 20px;
 }
 
 .visually-hidden {
@@ -31,6 +32,7 @@
 
 body {
   font-family: 'Open sans', sans-serif;
+  margin: 0;
 }
 
 .list {
@@ -39,6 +41,20 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .pre-title {
@@ -69,6 +85,8 @@ body {
 
 .header {
   background-color: rgb(95, 111, 105);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link {
@@ -103,6 +121,10 @@ body {
   background-color: #5a5d6b;
 }
 
+.hero-content {
+  padding: 272px 100px 208px 100px;
+}
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -118,6 +140,7 @@ body {
 
 .hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-margin);
 }
 
 .hero-title {
@@ -126,6 +149,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: var(--typical-margin);
 }
 
 .hero-after-title {
@@ -133,28 +157,33 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 360px;
 }
 
 /* -------------------ABOUT-------------------- */
 
 .about-pre-title {
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .about-after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: var(--typical-margin);
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 44px;
 }
 .about-btn {
   color: var(--second-btn-color);
@@ -167,11 +196,15 @@ body {
 }
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-margin);
 }
 .prices-title {
   color: var(--main-title-color);
+  margin-bottom: 44px;
 }
 .prices-list {
+  border: 1px solid #ffffff;
+  padding: 30px 20px;
 }
 .prices-item {
 }
@@ -185,6 +218,9 @@ body {
 }
 .prices-btn {
   color: #ffffff;
+  display: block;
+  margin: 44px auto 0;
+  /* margin-top: 44px; */
 }
 /* -------------------BENEFITS-------------------- */
 
@@ -195,14 +231,21 @@ body {
 .list {
 }
 .benefits-item {
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 20px 24px;
 }
 .benefits-item > .count {
   font-weight: 700;
   font-size: 42px;
   line-height: calc(57 / 42);
-  text-align: center;
+
   letter-spacing: 0.05em;
   color: #303030;
+  display: block;
+  margin-bottom: 6px;
 }
 .benefits-item-text {
   font-weight: 600;
@@ -213,9 +256,11 @@ body {
 }
 .benefits-pre-title {
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .benefits-title {
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .benefits-after-title {
 }
@@ -226,10 +271,12 @@ body {
 }
 .barbers-pre-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .barbers-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 
 .barbers-list {
@@ -244,6 +291,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
 .barbers-item-text {
   font-size: 14px;
@@ -251,4 +300,103 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+/* -------------------GALLERY-------------------- */
+
+.gallery-pre-title {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.contact-wrap {
+  background-color: #303030;
+}
+
+/* -------------------ONLINE-------------------- */
+
+.online {
+  padding-top: 130px;
+}
+
+.online-title {
+  color: var(--main-title-color);
+}
+
+/* -------------------CONTACTS-------------------- */
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.contacts-title {
+  color: var(--main-title-color);
+  margin-bottom: 40px;
+}
+
+.contacts-address {
+  margin-bottom: 70px;
+}
+.contacts-list {
+}
+
+.contacts-item {
+  margin-bottom: var(--typical-margin);
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.link-bold {
+  font-weight: 700;
+}
+
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: var(--typical-margin);
+}
+.contacts-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+/* -------------------FOOTER-------------------- */
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #9da4bd;
+}
+.footer-list {
+}
+
+.footer-item {
+}
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #303030;
 }
