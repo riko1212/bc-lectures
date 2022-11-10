@@ -15,6 +15,7 @@
   --second-btn-color: #303030;
   --accent-color: #ff6c00;
   --typical-margin: 20px;
+  --gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
 }
 
 .visually-hidden {
@@ -62,6 +63,16 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pre-title::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .section-title {
@@ -167,6 +178,12 @@ body {
 .hero-content {
   padding: 272px 100px 208px 100px;
   background-color: #5a5d6b;
+  /* background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/hero-bg.jpeg); */
+  background-image: var(--gradient), url(../img/hero-bg.jpeg);
   flex-grow: 1;
 }
 
@@ -195,6 +212,21 @@ body {
   letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: var(--typical-margin);
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.hero-title::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+}
+.hero-title::after {
+  content: '!';
+  font-size: 80px;
+  color: rebeccapurple;
 }
 
 .hero-after-title {
@@ -276,6 +308,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::after {
+  content: '';
+  height: 1px;
+  width: 100px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
 }
 
 .prices-item:last-child {
@@ -289,6 +331,11 @@ body {
 
   color: #9da4bd;
 }
+
+.prices-item-text:last-child {
+  order: 1;
+}
+
 .prices-btn {
   color: #ffffff;
   display: block;
@@ -404,7 +451,46 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #ffffff;
+}
+
+/* .barbers-soc-icon {
+  fill: currentColor;
+} */
+
+.barbers-soc-link:hover {
+  background-color: aquamarine;
+  fill: blueviolet;
+}
+
+/* .barbers-soc-link:hover {
+  background-color: aquamarine;
+}
+
+.barbers-soc-link:hover .barbers-soc-icon {
+  fill: blueviolet;
+} */
 
 /* -------------------GALLERY-------------------- */
 
