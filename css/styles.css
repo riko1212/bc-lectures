@@ -671,6 +671,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scaleY(1) rotate(0);
   transition: transform 300ms linear;
 }
@@ -698,3 +699,126 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #303030;
+  margin-bottom: 15px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  outline: transparent;
+  font-size: 14px;
+  color: #828fca;
+  padding-left: 30px;
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input::placeholder,
+.modal-text::placeholder {
+  font-size: 12px;
+  color: violet;
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):valid {
+  background-color: rgba(159, 245, 159, 0.418);
+}
+.modal-input:not(:placeholder-shown):not(:focus):invalid {
+  background-color: rgba(245, 159, 159, 0.418);
+}
+
+.modal-label {
+  font-size: 12px;
+  color: #999999;
+}
+
+.modal-label span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  outline: transparent;
+  font-size: 14px;
+  color: #828fca;
+  padding: 10px;
+  resize: none;
+}
+
+.check-text {
+  font-size: 14px;
+  color: #5a5d6b;
+  display: flex;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: transparent;
+  fill: #ffffff;
+}
+
+.input-check:focus + .check-text span {
+  border-color: var(--accent-color);
+}
+
+/* .check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.input-check:checked + .check-text::before {
+  background-color: var(--accent-color);
+  border: transparent;
+  background-image: url(../img/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+} */
