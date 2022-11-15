@@ -781,7 +781,41 @@ body {
   font-size: 14px;
   color: #5a5d6b;
   display: flex;
+  align-items: center;
+  position: relative;
 }
+
+/* .check-text::before {
+  content: '';
+  width: 40px;
+  height: 22px;
+  border: 1px solid #9da4bd;
+  border-radius: 50px;
+  margin-right: 10px;
+  background-color: #9da4bd;
+  transition: background-color 300ms linear;
+}
+
+.check-text::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 300ms linear, background-color 300ms linear;
+}
+
+.input-check:checked + .check-text::after {
+  transform: translate(18px);
+  background-color: rgb(158, 230, 158);
+}
+
+.input-check:checked + .check-text::before {
+  background-color: rgb(255, 255, 255);
+} */
 
 .check-text span {
   width: 16px;
