@@ -18,67 +18,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a href="" class="header-logo">
+      <div class="container header__container">
+        <a href="" class="logo header__logo">
           <img src="./img/logo.svg" alt="site logo" />
         </a>
-        <nav class="header-navigation">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="">About</a>
+        <nav class="navigation header__navigation">
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link" href="">About</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Services and prices</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Services and prices</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="#barbers">Barbers</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#barbers">Barbers</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Contacts</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <a href="tel:+380441111111" class="header-tel link"
+        <a href="tel:+380441111111" class="header__tel link"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="header-btn btn" data-modal-open>
+        <button type="button" class="header__btn btn" data-modal-open>
           Online-booking
         </button>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
+        <div class="container hero__container">
+          <ul class="soc-list list">
+            <li class="soc-list__item">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="hero-link link"
+                class="soc-list__link link"
                 >Instagram</a
               >
             </li>
-            <li class="hero-item">
+            <li class="soc-list__item">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="hero-link link"
+                class="soc-list__link link"
                 >Youtube</a
               >
             </li>
           </ul>
-          <div class="hero-content">
-            <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-after-title">
+          <div class="hero__content">
+            <p class="pre-title hero__pre-title">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__after-title">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -207,20 +210,20 @@
 
       <section class="barbers section" id="barbers">
         <div class="container">
-          <p class="barbers-pre-title pre-title">
+          <p class="barbers__pre-title pre-title">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title section-title">Our barbers</h2>
-          <ul class="barbers-list list">
-            <li class="barbers-item">
-              <div class="barbers-top-wrap">
+          <h2 class="barbers__title section-title">Our barbers</h2>
+          <ul class="card-list list">
+            <li class="card-list__item">
+              <div class="card-list__top-wrap">
                 <img
                   src="./img/barbers-img-1.jpeg"
                   alt="barbers haircut"
                   width="370"
                   height="346"
                 />
-                <p class="barbers-top-text">
+                <p class="card-list__top-text card-list__top-text--red">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
                   debitis voluptatem reiciendis porro accusamus? Saepe corrupti
                   eos architecto error ut libero reprehenderit sapiente
@@ -230,8 +233,8 @@
                   eos architecto error ut libero reprehenderit sapiente
                 </p>
               </div>
-              <h3 class="barbers-item-title">John Smith</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+              <h3 class="card-list__item-title">John Smith</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
                 <li class="barbers-soc-item">
                   <a href="" class="barbers-soc-link link">
@@ -251,25 +254,47 @@
                 </li>
               </ul>
             </li>
-            <li class="barbers-item">
-              <img
-                src="./img/barbers-img-2.jpeg"
-                alt="barbers haircut"
-                width="370"
-                height="346"
-              />
-              <h3 class="barbers-item-title">Michele Doe</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+            <li class="card-list__item">
+              <div class="card-list__top-wrap">
+                <img
+                  src="./img/barbers-img-1.jpeg"
+                  alt="barbers haircut"
+                  width="370"
+                  height="346"
+                />
+                <p class="card-list__top-text card-list__top-text--blue">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  debitis voluptatem reiciendis porro accusamus? Saepe corrupti
+                  eos architecto error ut libero reprehenderit sapiente
+                  voluptatum, recusandae dolore? Similique pariatur rerum illo!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  debitis voluptatem reiciendis porro accusamus? Saepe corrupti
+                  eos architecto error ut libero reprehenderit sapiente
+                </p>
+              </div>
+              <h3 class="card-list__item-title">Michele Doe</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
             </li>
-            <li class="barbers-item">
-              <img
-                src="./img/barbers-img-3.jpeg"
-                alt="barbers haircut"
-                width="370"
-                height="346"
-              />
-              <h3 class="barbers-item-title">Alan Black</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+            <li class="card-list__item">
+              <div class="card-list__top-wrap">
+                <img
+                  src="./img/barbers-img-1.jpeg"
+                  alt="barbers haircut"
+                  width="370"
+                  height="346"
+                />
+                <p class="card-list__top-text card-list__top-text--green">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  debitis voluptatem reiciendis porro accusamus? Saepe corrupti
+                  eos architecto error ut libero reprehenderit sapiente
+                  voluptatum, recusandae dolore? Similique pariatur rerum illo!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  debitis voluptatem reiciendis porro accusamus? Saepe corrupti
+                  eos architecto error ut libero reprehenderit sapiente
+                </p>
+              </div>
+              <h3 class="card-list__item-title">Alan Black</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
             </li>
           </ul>
         </div>
@@ -412,7 +437,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>x</button>
         <p class="modal-title">Заголовок модального вікна</p>

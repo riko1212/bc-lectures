@@ -1,0 +1,128 @@
+.barbers {
+  background-color: #f7f7f7;
+}
+.barbers__pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.barbers__title {
+  color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+
+.card-list {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-around; */
+}
+
+.card-list__item {
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.card-list__top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-list__top-text {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: rgba(255, 106, 0, 0.467);
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
+  overflow: auto;
+  .barbers-item:hover & {
+    transform: translateY(0);
+  }
+  &::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(11, 161, 46);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(126, 14, 117);
+    outline: 1px solid rgb(115, 192, 47);
+    border-radius: 10px;
+  }
+}
+
+.card-list__top-text--green {
+  background-color: green;
+}
+
+.card-list__top-text--blue {
+  background-color: blue;
+}
+
+.card-list__top-text--red {
+  background-color: red;
+}
+
+.card-list__item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+.card-list__item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms linear;
+  &:hover {
+    background-color: aquamarine;
+  }
+}
+
+.barbers-soc-icon {
+  fill: #ffffff;
+  transition: fill 300ms linear;
+  .barbers-soc-link:hover & {
+    fill: blueviolet;
+  }
+}
+
+/* .barbers-soc-link:hover {
+  background-color: aquamarine;
+  fill: blueviolet;
+} */
