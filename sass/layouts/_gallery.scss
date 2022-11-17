@@ -6,11 +6,18 @@
 .galley-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
-  column-gap: 30px;
-  row-gap: 60px;
+  gap: 30px;
+  // column-gap: 30px;
+  // row-gap: 60px;
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  // width: calc((100% - 90px) / 4);
+  width: 100%;
+  @include min-media(768px) {
+    @include calc(2);
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc(4);
+  }
 }
