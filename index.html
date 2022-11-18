@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="" class="logo header__logo">
           <img src="./img/logo.svg" alt="site logo" />
@@ -51,10 +51,70 @@
         <button type="button" class="header__btn btn" data-modal-open>
           Online-booking
         </button>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="nav">
+              <ul class="mob-list list">
+                <li class="mob-list__item">
+                  <a class="mob-list__link link" href="">About</a>
+                </li>
+                <li class="mob-list__item">
+                  <a class="mob-list__link link" href="">Services and prices</a>
+                </li>
+                <li class="mob-list__item">
+                  <a class="mob-list__link link" href="#barbers">Barbers</a>
+                </li>
+                <li class="mob-list__item">
+                  <a class="mob-list__link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <a href="tel:+380441111111" class="mob-menu__tel link"
+              >+38 044 111 11 11</a
+            >
+            <button type="button" class="mob-menu__btn btn" data-modal-open>
+              Online-booking
+            </button>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mob-soc-list__link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mob-soc-list__link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <ul class="soc-list list">
             <li class="soc-list__item">
@@ -87,7 +147,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="about section">
         <div class="container about-container">
           <ul class="about-list list">
@@ -307,12 +367,35 @@
           <h2 class="visually-hidden">Gallery</h2>
           <ul class="galley-list list">
             <li class="gallery-item">
-              <img
-                src="./img/gallery-img-1.jpeg"
-                alt="gallery item"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-img-1.jpeg    1x,
+                    ./img/gallery-img-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1-tab.jpeg    1x,
+                    ./img/gallery-img-1-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1-mob.jpeg    1x,
+                    ./img/gallery-img-1-mob-2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/gallery-img-1-mob.jpeg"
+                  alt="gallery item"
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
               <img
@@ -485,5 +568,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
